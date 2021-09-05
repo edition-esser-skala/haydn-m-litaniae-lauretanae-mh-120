@@ -1,0 +1,16 @@
+composer: Haydn, Johann Michael
+title: Litaniae lauretanae
+id: MH 120
+genre: litany
+scoring: S, A, T, B (coro), 2 ob, 2 clno (C), timp, 2 vl, b, org
+sources:
+  1:
+    siglum: D-NATk
+    shelfmark: NA/SP (H-53)
+    type: manuscript copy
+    date: 1810–1839
+    rism: 455039974
+    url: https://mirador.acdh.oeaw.ac.at/musikarchivspitz/D-NATk_H53/
+github: haydn-m-litaniae-lauretanae-MH-120
+imslp:
+notes:

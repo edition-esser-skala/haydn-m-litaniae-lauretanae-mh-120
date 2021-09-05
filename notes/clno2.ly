@@ -35,3 +35,25 @@ KyrieClarinoII = {
     g,8 c g4_\critnote e r\fermata \bar "|." %31 finis
   }
 }
+
+SanctaClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \tempoSancta
+    R2.*64 %64
+    r4 r c'8\fE c %65
+    g4 g c8 c
+    g4 g d'8 c
+    c2 g4
+    g,2.
+    g %70
+    g
+    g
+    g
+    g
+    d''2 c4 %75
+    c c g
+    c8 c, g'2_\critnote
+    e4 r r\fermata \bar "|." %78 finis
+  }
+}

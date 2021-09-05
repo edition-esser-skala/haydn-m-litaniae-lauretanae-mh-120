@@ -37,3 +37,29 @@ KyrieOboeI = {
     h'8 c4 h8 c4 r\fermata \bar "|." %31 finis
   }
 }
+
+SanctaOboeI = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 3/4 \tempoSancta
+    R2.*60 %60
+    e4.\fE e'8 e d!
+    c8. h16 c4 r
+    d,4. d'8 d c
+    h a h4 r
+    c8 d e4 e %65
+    d2 e4
+    d2 f8 e
+    e2 d4
+    g8 f e d c h
+    a2. %70
+    f'8 e d c h a
+    g2.
+    e'8 d c h a g
+    f2 f'4
+    d'2 c4 %75
+    c2 h4
+    c2 h4
+    c2.\fermata \bar "|." %78 finis
+  }
+}

@@ -59,3 +59,77 @@ KyrieBassoLyrics = \lyricmode {
   De -- us, mi -- se --
   re -- re no -- bis. %27 finis
 }
+
+SanctaBasso = {
+  \relative c {
+    \clef bass
+    \key a \minor \time 3/4 \autoBeamOff \tempoSancta
+    \mvTr a4\pE^\solo e' e
+    a8([ f)] e d c h
+    c([ h)] a4 r
+    R2.*6 %9
+    e'4 a, a'8 g! %10
+    f8. e16 d4 r
+    d g, g'8([ f)]
+    e([ d)] c4 r
+    a'4. a8 g f
+    c'8. g16 g8 r r4 %15
+    a8[ g f e d c]
+    d'[ c h a g f]
+    e c' g,2
+    c4 r r
+    R2.*42 %61
+    \mvTr a4.\fE^\tutti a'8 a g!
+    fis8. e16 fis4 r
+    g,4. g'8 g f
+    e([ d)] c4 c8 c %65
+    g'4 g, c8 c
+    g'4 g,8 g h c
+    g'2 g,4
+    R2.
+    a'8[ g f e d c] %70
+    h4 h h
+    g'8[ f e d c h]
+    a2.
+    f'8([ e)] d([ c)] h([ a)]
+    g2 c4 %75
+    c g'2
+    c8 c, g2
+    c2.\fermata \bar "|." %78 finis
+  }
+}
+
+SanctaBassoLyrics = \lyricmode {
+  San -- cta Ma --
+  ri -- a, o -- ra pro
+  no -- bis.
+
+  San -- cta De -- i %10
+  ge -- ni -- trix,
+  o -- ra pro
+  no -- bis,
+  san -- cta vir -- go
+  vir -- gi -- num, %15
+  o --
+  _
+  ra pro no --
+  bis.
+
+  Vir -- go pru -- den -- %62
+  tis -- si -- ma,
+  vir -- go prae -- di --
+  can -- da, vir -- go %65
+  po -- tens, vir -- go
+  cle -- mens, vir -- go fi --
+  de -- lis,
+
+  o -- %70
+  _ ra pro
+  no --
+  bis,
+  o -- ra pro
+  no -- bis, %75
+  pro no --
+  bis, pro no --
+  bis. %78 finis
+}

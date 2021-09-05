@@ -35,3 +35,25 @@ KyrieTimpani = {
     g8 c g4 c r\fermata \bar "|."
   }
 }
+
+SanctaTimpani = {
+  \relative c {
+    \clef bass
+    \key c \major \time 3/4 \tempoSancta
+    R2.*64 %64
+    r4 r c8\fE c %65
+    g4 g c
+    g r r
+    g2-\critnote g4
+    g r r
+    g r r %70
+    g r r
+    g r r
+    g r r
+    g r r
+    R2. %75
+    r4 g-\critnote g
+    c g-\critnote g8 g
+    c4 r r\fermata \bar "|." %78 finis
+  }
+}

@@ -71,3 +71,48 @@ KyrieTenoreLyrics = \lyricmode {
   De -- us, mi -- se --
   re -- re no -- bis. %27 finis
 }
+
+SanctaTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key a \minor \time 3/4 \autoBeamOff \tempoSancta
+    R2.*61 %61
+    \mvTr a4.\fE^\tutti a8 a a
+    a8. g16 a4 r
+    g4. g8 g g
+    g([ h)] c4 c8 c %&5
+    h4 h c8 c
+    h4 h8 c d c
+    c2 h4
+    r g'8[( f e d]
+    c4) c c %70
+    a( f'8[ e d c])
+    h2.
+    g4 e'8[ d c h]
+    a4 a d
+    d2 c4 %75
+    c c( h)
+    c8 c c4( h)
+    c2.\fermata \bar "|." %78 finis
+  }
+}
+
+SanctaTenoreLyrics = \lyricmode {
+  Vir -- go pru -- den -- %62
+  tis -- si -- ma,
+  vir -- go prae -- di --
+  can -- da, vir -- go %65
+  po -- tens, vir -- go
+  cle -- mens, vir -- go fi --
+  de -- lis,
+  o --
+  ra pro %70
+  no --
+  bis,
+  o -- _
+  _ ra pro
+  no -- bis, %75
+  pro no --
+  bis, pro no --
+  bis. %78 finis
+}

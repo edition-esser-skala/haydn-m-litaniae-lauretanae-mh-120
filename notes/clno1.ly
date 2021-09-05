@@ -35,3 +35,25 @@ KyrieClarinoI = {
     d8 e d4 c r\fermata \bar "|."
   }
 }
+
+SanctaClarinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \tempoSancta
+    R2.*64 %64
+    r4 r e'8\fE e %65
+    d4 d e8 e
+    d4 d f8 e
+    e2 d4
+    g,2.
+    g %70
+    g
+    g
+    g
+    g
+    f'2 e4 %75
+    e e d
+    \partCombineChords e8 e \mvTr \pd d2\trill^\critnote
+    c4 r r\fermata \bar "|." %78 finis
+  }
+}

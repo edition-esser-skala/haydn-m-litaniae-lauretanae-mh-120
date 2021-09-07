@@ -73,10 +73,6 @@ KyrieSopranoLyrics = \lyricmode {
   re -- re no -- bis. %27 finis
 }
 
-% A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di: Par -- ce no -- bis, Do -- mi -- ne.
-% A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di: Ex -- au -- di nos, Do -- mi -- ne.
-% A -- gnus De -- i, qui tol -- lis pec -- ca -- ta mun -- di: Mi -- se -- re -- re no -- bis.
-
 SanctaSoprano = {
   \relative c' {
     \clef treble
@@ -398,4 +394,59 @@ SalusSopranoLyrics = \lyricmode {
   ra pro no --
   bis, pro no --
   bis. %79 finis
+}
+
+AgnusSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAgnus
+    R1*6 %6
+    r2 \mvTr b'4.\pE^\solo b8
+    b4 b8 b \appoggiatura as16 g8.([ f16)] es8 es
+    des'4 des r8 des c b
+    b([ as16 g)] as8 f c'4 c, %10
+    des f des' c8 b
+    as4( g8.) g16 f4 r
+    r2 \mvTr c'4.\fE^\tutti c8
+    b4 b8 b as4 as8 as
+    g4 g8 es' c4. c8 %15
+    c4 h r2^\critnote
+    R1
+    r2 g4. g8
+    as as h h c([ d)] es([ d)]
+    \once \tieDashed c2~ c8 h h h %20
+    c4 d \once \tieDashed c2~
+    c4 h c r
+    R1*3 %25
+    g4. g8 as as h h
+    c4 g c8[ es d c]
+    h4 c2 h4
+    c4 c8 b as4 g
+    as2 g\fermata \bar "|." %30 FINIS
+  }
+}
+
+AgnusSopranoLyrics = \lyricmode {
+  A -- gnus %7
+  De -- i, qui tol -- lis pec --
+  ca -- ta, pec -- ca -- ta
+  mun -- di: Ex -- au -- di %10
+  nos, ex -- au -- di nos,
+  Do -- mi -- ne.
+  A -- gnus
+  De -- i, qui tol -- lis pec --
+  ca -- ta, pec -- ca -- ta %15
+  mun -- di:
+
+  Mi -- se --
+  re -- re, mi -- se -- re -- re
+  no -- bis, mi -- se -- %20
+  re -- re no --
+  _ bis,
+
+  mi -- se -- re -- re, mi -- se -- %26
+  re -- re no --
+  _ _ _
+  bis, mi -- se -- re -- re
+  no -- bis. %30 FINIS
 }

@@ -97,3 +97,16 @@ SalusClarinoII = {
     c4 r\fermata \bar "|." %79 finis
   }
 }
+
+AgnusClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoAgnus
+    R1*25 %25
+    g2\fE g
+    g g
+    g'4 c, g' g
+    c c,8 c c4 c
+    c2 c\fermata \bar "|." %30 FINIS
+  }
+}

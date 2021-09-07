@@ -278,3 +278,44 @@ SalusTenoreLyrics = \lyricmode {
   bis, pro no --
   bis. %79 finis
 }
+
+AgnusTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAgnus
+    R1*12 %12
+    r2 \mvTr as4.\fE^\tutti as8
+    as4 g8 g g4 f8 f
+    f4 es8 c' es4. es8 %15
+    es4 d g,4. g8
+    as as h h c([ d)] es([ d)]
+    c2 h4 r
+    g f g8([ f)] es4
+    g es' es8([ d)] d4 %20
+    r g,8 g g4 as
+    g2 g4 r
+    R1*4 %26
+    g4 es'8([ d)] c4 d8([ es)]
+    d4( es d2)
+    c4 c8 c c4 c
+    c2 c\fermata \bar "|." %30 FINIS
+  }
+}
+
+AgnusTenoreLyrics = \lyricmode {
+  A -- gnus %13
+  De -- i, qui tol -- lis pec --
+  ca -- ta, pec -- ca -- ta %15
+  mun -- di: Mi -- se --
+  re -- re, mi -- se -- re -- re
+  no -- bis,
+  mi -- se -- re -- re,
+  mi -- se -- re -- re, %20
+  mi -- se -- re -- re
+  no -- bis,
+
+  mi -- se -- re -- re %27
+  no --
+  bis, mi -- se -- re -- re
+  no -- bis. %30 FINIS
+}

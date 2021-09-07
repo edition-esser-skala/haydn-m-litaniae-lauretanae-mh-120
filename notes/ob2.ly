@@ -131,3 +131,32 @@ SalusOboeII = {
     e r\fermata \bar "|." %79 finis
   }
 }
+
+AgnusOboeII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoAgnus
+    R1*5 %5
+    r2 r4-\critnote b'\fE
+    as8. f16 es8 d es4 r
+    R1*4 %11
+    r2 r4-\critnote c'\fE
+    b8. g16 f8 e f as \tieDashed as4~
+    as g2 f4~
+    f es2 es4~ %15
+    es d \tieSolid r2
+    R1*2
+    r2 c4. c8
+    es4 fis g2 %20
+    g8 f16 es d8 g es4 d
+    d2 g4.\pE g8
+    as as h h c g es' d
+    c \once \tieDashed c~ c16 es d c h4 h
+    c d~ d8 c c8.(\trill h32 c) %25
+    h4 g\fE g8 f16 es d8 g
+    es4 c c'8 es d c
+    h4 es, d2
+    e4 g f g
+    f2 e\fermata \bar "|." %30 FINIS
+  }
+}

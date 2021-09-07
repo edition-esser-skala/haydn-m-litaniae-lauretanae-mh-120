@@ -311,3 +311,44 @@ SalusAltoLyrics = \lyricmode {
   bis, pro no --
   bis. %79 finis
 }
+
+AgnusAlto = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAgnus
+    R1*12 %12
+    r2 \mvTr f4.\fE^\tutti f8
+    f4 es8 es es4 d8 d
+    d4 c8 g' fis4. fis8 %15
+    g4 g r2
+    R1*2
+    r2 c,4. c8
+    es es fis fis g4 g %20
+    g8([ f16 es)] d8([ g)] es4 d
+    d2 c4 r
+    R1*3 %25
+    g'4. g8 g f16([ es)] d8 g
+    es4 c r2
+    g'8 g g g g2
+    e4 g8 g f4 g
+    f2 e\fermata \bar "|." %30 FINIS
+  }
+}
+
+AgnusAltoLyrics = \lyricmode {
+  A -- gnus %13
+  De -- i, qui tol -- lis pec --
+  ca -- ta, pec -- ca -- ta %15
+  mun -- di:
+
+  Mi -- se -- %19
+  re -- re, mi -- se -- re -- re, %20
+  mi -- se -- re -- re
+  no -- bis,
+
+  mi -- se -- re -- re, mi -- se -- %26
+  re -- re,
+  mi -- se -- re -- re no --
+  bis, mi -- se -- re -- re
+  no -- bis. %30 FINIS
+}

@@ -233,3 +233,39 @@ SalusViolinoII = {
     c,4 r\fermata \bar "|." %79 finis
   }
 }
+
+AgnusViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \dorian \time 4/4 \tempoAgnus
+    r8 es-!\p es16-! es-! g( es) r8 d-! d16-! d-! d'( g,)
+    r8 g-! g16-! g-! es'( c) r8 as-! as16-! as-! c( as)
+    r8 f-! f16-! f-! f'( b,) r8 g-! g16-! g-! g'( es)
+    r8 b-! b16-! b-! es( b) r8 as-! as16-! as-! c( as)
+    r8 c-! c16-! c-! f( c) b8 b es16 es es es %5
+    es es, es es d d d d es8 b'-!\fE b16-! b-! des( b)
+    as-! as-! c( as) g8 f es g-!\p g16-! g-! b( g)
+    r8 f-! f16-! f-! f'( b,) r8 g-! g16-! g-! g'( es)
+    r8 g,-! g16-! g-! es'( g,) r8 g-! g16-! g-! c( g)
+    r8 f-! f16-! f-! c'( as) r8 f-! f16-! f-! c'( f,) %10
+    r8 des-! des16-! des-! des'( b) r8 b as g
+    f'16 f, f f e e e e f8 c'\f-! c16-! c-! es( c)
+    b des c b as8 g f as as16-! as-! c( as)
+    r8 as-! g16-! g-! b( g) r8 g-! f16-! f-! as( f)
+    r8 f-! es16-! es-! g( es) r8 fis-! fis16-! fis-! c'(-\critnote fis,) %15
+    g4 g r2
+    R1*2
+    r2 c,4.c8
+    es es fis fis g4 g %20
+    g8 f16 es d8 g es4 d
+    d2 c8 g'4\p g8
+    as as h h c g es' d
+    c c~ c16 es d c h4 h
+    c \once \tieDashed d~ d8 c c8.(\trill h32 c) %25
+    h4 g8\f g g f16 es d8 g
+    es4 c c'8 es d c
+    g4 g g2
+    e4 g8 g f4 g
+    f2 e\fermata \bar "|." %30 FINIS
+  }
+}

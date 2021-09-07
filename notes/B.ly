@@ -295,3 +295,57 @@ SalusBassoLyrics = \lyricmode {
   bis, pro no --
   bis. %79 finis
 }
+
+AgnusBasso = {
+  \relative c {
+    \clef bass
+    \key c \dorian \time 4/4 \autoBeamOff \tempoAgnus
+    \mvTr g'4.\pE^\solo g8 g4 g8 g
+    es8.([ d16)] c8 c as'4 as
+    r8 f b as g4 g
+    b b, c c
+    c'4. es,8 d([ c16 b] es8) as, %5
+    b4. b8 es4 r
+    R1*6 %12
+    r2 \mvTr f4.\fE^\tutti f8
+    d!4 es!8 es c4 d8 d
+    h4 c8 c as'4. as8 %15
+    g4 g, r2
+    r c4. c8
+    es es fis fis g4 g
+    g8([ f16 es)] d8([ g)] es([ d)] c4
+    c as g4. g8 %20
+    as as h h c4 f
+    g( g,) c r
+    R1*4 %26
+    c4. c8 es es fis fis
+    g4 c, g2
+    c4 e8 e f4 e
+    f2 c\fermata \bar "|." %30 FINIS
+  }
+}
+
+AgnusBassoLyrics = \lyricmode {
+  A -- gnus De -- i, qui
+  tol -- lis pec -- ca -- ta,
+  pec -- ca -- ta mun -- di:
+  Par -- ce no -- bis,
+  par -- ce no -- bis, %5
+  Do -- mi -- ne.
+
+  A -- gnus %13
+  De -- i, qui tol -- lis pec --
+  ca -- ta, pec -- ca -- ta %15
+  mun -- di:
+  Mi -- se --
+  re -- re, mi -- se -- re -- re,
+  mi -- se -- re -- re
+  no -- bis, mi -- se -- %20
+  re -- re, mi -- se -- re -- re
+  no -- bis,
+
+  mi -- se -- re -- re, mi -- se -- %27
+  re -- re no --
+  bis mi -- se -- re -- re
+  no -- bis. %30 FINIS
+}

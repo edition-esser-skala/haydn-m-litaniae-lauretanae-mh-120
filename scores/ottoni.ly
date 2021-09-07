@@ -68,7 +68,7 @@
   \bookpart {
     \header {
       number = "1"
-      title = "F I R S T"
+      title = "K Y R I E"
     }
     \paper { indent = 2\cm }
     \score {
@@ -78,18 +78,114 @@
             \set GrandStaff.instrumentName = \markup \center-column { "Clarino" "in C" }
             \new Staff {
               \set Staff.instrumentName = "I"
-              \xxxClarinoI
+              \KyrieClarinoI
             }
             \new Staff {
               \set Staff.instrumentName = "II"
-              \xxxClarinoII
+              \KyrieClarinoII
             }
           >>
         >>
         \new Staff {
           \set Staff.instrumentName = \markup \center-column { "Timpani" "in C–G" }
-          \xxxTimpani
+          \KyrieTimpani
         }
+      >>
+    }
+  }
+  \bookpart {
+    \header {
+      number = "2"
+      title = "S A N C T A   M A R I A"
+    }
+    \paper { systems-per-page = #2 }
+    \score {
+      <<
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \SanctaClarinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \SanctaClarinoII
+            }
+          >>
+        >>
+        \new Staff { \SanctaTimpani }
+      >>
+    }
+  }
+  \bookpart {
+    \header {
+      number = "3"
+      title = "S P E C U L U M   I U S T I T I Æ"
+    }
+    \paper { systems-per-page = #2 }
+    \score {
+      <<
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \SpeculumClarinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \SpeculumClarinoII
+            }
+          >>
+        >>
+        \new Staff { \SpeculumTimpani }
+      >>
+    }
+  }
+  \bookpart {
+    \header {
+      number = "4"
+      title = "S A L U S   I N F I R M O R U M  –  R E G I N A   A N G E L O R U M"
+    }
+    \paper { systems-per-page = #3 }
+    \score {
+      <<
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \SalusClarinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \SalusClarinoII
+            }
+          >>
+        >>
+        \new Staff { \SalusTimpani }
+      >>
+    }
+  }
+  \bookpart {
+    \header {
+      number = "5"
+      title = "A G N U S   D E I"
+    }
+    \paper { systems-per-page = #1 ragged-last = ##f }
+    \score {
+      <<
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \AgnusClarinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \AgnusClarinoII
+            }
+          >>
+        >>
+        \new Staff { \AgnusTimpani }
       >>
     }
   }

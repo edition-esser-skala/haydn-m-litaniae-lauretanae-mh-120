@@ -46,28 +46,64 @@
   \bookpart {
     \header {
       number = "1"
-      title = "F I R S T"
+      title = "K Y R I E"
     }
     \paper { indent = 2\cm }
     \score {
       <<
         \new Staff {
           \set Staff.instrumentName = "Organo"
-          \Organo
+          \KyrieOrgano
         }
-        \new FiguredBass { \BassFigures }
+        \new FiguredBass { \KyrieBassFigures }
       >>
     }
   }
   \bookpart {
     \header {
       number = "2"
-      title = "S E C O N D"
+      title = "S A N C T A   M A R I A"
     }
     \score {
       <<
-        \new Staff { \Organo }
-        \new FiguredBass { \BassFigures }
+        \new Staff { \SanctaOrgano }
+        \new FiguredBass { \SanctaBassFigures }
+      >>
+    }
+  }
+  \bookpart {
+    \header {
+      number = "3"
+      title = "S P E C U L U M   I U S T I T I Æ"
+    }
+    \score {
+      <<
+        \new Staff { \SpeculumOrgano }
+        \new FiguredBass { \SpeculumBassFigures }
+      >>
+    }
+  }
+  \bookpart {
+    \header {
+      number = "4"
+      title = "S A L U S   I N F I R M O R U M  –  R E G I N A   A N G E L O R U M"
+    }
+    \score {
+      <<
+        \new Staff { \SalusOrgano }
+        \new FiguredBass { \SalusBassFigures }
+      >>
+    }
+  }
+  \bookpart {
+    \header {
+      number = "5"
+      title = "A G N U S   D E I"
+    }
+    \score {
+      <<
+        \new Staff { \AgnusOrgano }
+        \new FiguredBass { \AgnusBassFigures }
       >>
     }
   }

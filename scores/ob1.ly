@@ -38,7 +38,7 @@
 \layout {
   \context {
     \Staff
-    instrumentName = "b"
+    instrumentName = "ob 1"
   }
 }
 
@@ -52,8 +52,8 @@
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Bassi"
-          \KyrieOrgano
+          \set Staff.instrumentName = "Oboe I"
+          \KyrieOboeI
         }
       >>
     }
@@ -63,9 +63,10 @@
       number = "2"
       title = "S A N C T A   M A R I A"
     }
+    \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \SanctaOrgano }
+        \new Staff { \SanctaOboeI }
       >>
     }
   }
@@ -74,9 +75,10 @@
       number = "3"
       title = "S P E C U L U M   I U S T I T I Æ"
     }
+    \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \SpeculumOrgano }
+        \new Staff { \SpeculumOboeI }
       >>
     }
   }
@@ -85,9 +87,10 @@
       number = "4"
       title = "S A L U S   I N F I R M O R U M  –  R E G I N A   A N G E L O R U M"
     }
+    \paper { systems-per-page = #4 }
     \score {
       <<
-        \new Staff { \SalusOrgano }
+        \new Staff { \SalusOboeI }
       >>
     }
   }
@@ -96,9 +99,10 @@
       number = "5"
       title = "A G N U S   D E I"
     }
+    \paper { systems-per-page = #5 }
     \score {
       <<
-        \new Staff { \AgnusOrgano }
+        \new Staff { \AgnusOboeI }
       >>
     }
   }

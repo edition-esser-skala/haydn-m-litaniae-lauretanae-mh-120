@@ -149,3 +149,165 @@ SanctaAltoLyrics = \lyricmode {
   bis, pro no --
   bis. %78 finis
 }
+
+SpeculumAlto = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \autoBeamOff \tempoSpeculum
+    R1*25 %25
+    r2 \mvTr f8\fE^\tutti f f a
+    f8. f16 f4 f f8 f
+    d8. d16 c4 c a'8 g16([ f)]
+    d8. d16 f4 f8^\critnote e e8. e16
+    d4 f8 f16 f f8^\critnote e r4 %30
+    a8 a16 a d,8 a' g g c, g'
+    f4 h,8 f' e4 e
+    d8([ e] d4) e4 g
+    g8([ f)] a4 a8([ g)] h h
+    h([ a)] a4 g2 %35
+    g8 g g4 g^\critnote r
+    R1\fermata \bar "|." %37 finis
+  }
+}
+
+SpeculumAltoLyrics = \lyricmode {
+  Ro -- sa, ro -- sa %26
+  my -- sti -- ca, tur -- ris Da --
+  vi -- di -- ca, tur -- ris e --
+  bur -- ne -- a, do -- mus au -- re --
+  a, foe -- de -- ris ar -- ca, %30
+  ia -- nu -- a coe -- li, stel -- la ma -- tu --
+  ti -- na, o -- ra pro
+  no -- bis, o --
+  ra pro no -- bis, o --
+  ra pro no -- %35
+  bis, pro no -- bis. %36 finis
+}
+
+SalusAlto = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 4/4 \autoBeamOff \tempoSalus
+    R1
+    r2^\critnote r4 \mvTr g'8\fE^\tutti f!
+    es d c4 c'8[ b a fis]
+    g2 fis8 r r4
+    r a a g %5
+    g g a( b)
+    g f es( f8[ g]
+    f2) f8 r r4
+    R1
+    r4 f f8.^\critnote f16 f4 %10
+    r f8 f f4 f
+    R1^\critnote
+    c4 as'8 g f4 f
+    g f8 f f4( g8[ as]
+    g4 f) es8 r r4 %15
+    r2 g4. g8
+    g4 g g g
+    g8[ f] f4. e8 r4
+    g2( c8[ as]) f es
+    des4( b'8[ as] g4) as8 g %20
+    f4( e) f8 r r4
+    r2 r4 f
+    f8. f16 es4 es d!8 d
+    d4 c g'8([ as)] as g
+    g4( f) g r %25
+    R1
+    f4 g8 f f4 es
+    as as8 as as4 g8 f
+    g([ f)] es4 g g
+    r2 h4 g8 g %30
+    g([ f)] g4 as as8 as
+    fis4 fis g2
+    g8 r r4 r2
+    R1 \noBreak
+    R \bar "||" %35
+    \twofourtime \key c \major \time 2/4 \tempoRegina \newSpacingSection
+      R2*3
+    r4 r8 g(
+    a[ h)] g a %40
+    f([ g)] e f
+    f e d4
+    e^\critnote r
+    R2*4 %47
+    r4 r8 g(
+    a[ h)] g a
+    f([ g)] e e %50
+    d d d4
+    d r
+    R2*3 %55
+    r4 r8 e(
+    f[ g)] e f
+    d([ e)] c d^\critnote
+    e e e4
+    e r %60
+    R2*13 %73
+    r4 r8 g(
+    a[ h)] g a %75
+    f([ g)] e f
+    f e d4
+    e8 g g4
+    g r\fermata \bar "|." %79 finis
+  }
+}
+
+SalusAltoLyrics = \lyricmode {
+  Sa -- lus %2
+  in -- fir -- mo -- _
+  _ rum,
+  o -- ra pro %5
+  no -- bis, o --
+  ra pro no --
+  bis.
+
+  Re -- fu -- gi -- um %10
+  pec -- ca -- to -- rum,
+
+  o -- ra pro no -- bis,
+  o -- ra pro no --
+  bis. %15
+  Con -- so --
+  la -- trix af -- fli --
+  cto -- _ rum,
+  o -- ra pro
+  no -- bis, pro %20
+  no -- bis.
+  Au --
+  xi -- li -- um Chri -- sti -- a --
+  no -- rum, Chri -- sti -- a --
+  no -- rum, %25
+
+  o -- ra pro no -- bis,
+  o -- ra pro no -- bis, o --
+  ra pro no -- bis,
+  o -- ra pro %30
+  no -- bis, o -- ra, o --
+  ra pro no --
+  bis.
+
+  O -- %39
+  ra pro %40
+  no -- bis, o --
+  ra pro no --
+  bis,
+
+  o -- %48
+  ra pro
+  no -- bis, o -- %50
+  ra pro no --
+  bis,
+
+  o -- %56
+  ra pro
+  no -- bis, o --
+  ra pro no --
+  bis, %60
+
+  o -- %74
+  ra pro %75
+  no -- bis, o --
+  ra pro no --
+  bis, pro no --
+  bis. %79 finis
+}

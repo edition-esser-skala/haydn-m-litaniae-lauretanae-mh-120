@@ -116,3 +116,165 @@ SanctaTenoreLyrics = \lyricmode {
   bis, pro no --
   bis. %78 finis
 }
+
+SpeculumTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key f \major \time 4/4 \autoBeamOff \tempoSpeculum
+    R1*25 %25
+    r2 \mvTr a8\fE^\tutti a a c
+    c8. b16 b4 b8([ a)] a a
+    a8. a16 g4 g f8 g
+    g8. g16 g4 g8 g g8. g16
+    g4 g8 h?16 h g8 g r4 %30
+    c8 c16 c d8 e16([ f)] h,8 h c d16([ e)]
+    a,4 h16([ c)] d8 g,4 g
+    g2 g4 c
+    c f,8([ d')] d4 g,8 e'
+    e4 c h8( c4 h8) %35
+    c8 c c([ h)] c4 r
+    R1\fermata \bar "|." %37 finis
+  }
+}
+
+SpeculumTenoreLyrics = \lyricmode {
+  Ro -- sa, ro -- sa %26
+  my -- sti -- ca, tur -- ris Da --
+  vi -- di -- ca, tur -- ris e --
+  bur -- ne -- a, do -- mus au -- re --
+  a, foe -- de -- ris ar -- ca, %30
+  ia -- nu -- a coe -- li, stel -- la ma -- tu --
+  ti -- na, o -- ra pro
+  no -- bis, o --
+  ra pro no -- bis, o --
+  ra pro no -- %35
+  bis, pro no -- bis. %36 finis
+}
+
+SalusTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key g \minor \time 4/4 \autoBeamOff \tempoSalus
+    R1
+    r4 \mvTr d8\fE^\tutti c b a \once \tieDashed g4~
+    g2 es'4 d
+    b g a8 r r4
+    r d d d %5
+    d c c b
+    c d es d8[ c]
+    d b4 a8 b r r4
+    R1
+    r4 b b8. a16 a4 %10
+    r c8 c c4 b
+    b8 f'4 f8 f4 es
+    c c8 c b4 b
+    es c8 c b4 b8([ as)]
+    b2 b8 r r4 %15
+    r2 b4. b8
+    b4 b b c^\critnote
+    c( d) c r
+    g2. f8 f
+    des'([ b ges f] e4) f8 des' %20
+    c2 c8 r r4
+    r2 r4 as
+    as8. as16 g4 g f8 f
+    f4 es c' d8 d
+    es4( c) d r %25
+    r2 es4 es8 es
+    es4 d8 f b,4 b
+    c c d2
+    c8[ h] c2 h4
+    d d8 d d4 c8 h %30
+    c([ d)] es4 es es8 es
+    es4 es es( d)
+    c8 r r4 r2
+    R1 \noBreak
+    R \bar "||" %35
+    \twofourtime \key c \major \time 2/4 \tempoRegina \newSpacingSection
+      R2*3 %38
+    r4 r8 \once \tieDashed c~
+    c[ d] h c %40
+    a([ h)] g a
+    h c g4
+    g r
+    R2*4 %47
+    r4 r8 \once \tieDashed c~
+    c[ d] h c
+    a([ h)] g a %50
+    a g g([ fis)]
+    g4 r
+    R2*3 %55
+    r4 r8 \once \tieDashed a~
+    a[ h] g a
+    fis?([ gis)] e d'
+    d c h4
+    a r %60
+    R2*13 %73
+    r4 r8 \once \tieDashed c~
+    c[ d] h c %75
+    a([ h)] g a
+    g g g4
+    g8 c c([ h)]
+    c4 r\fermata \bar "|." %79 finis
+  }
+}
+
+SalusTenoreLyrics = \lyricmode {
+  Sa -- lus in -- fir -- mo -- %2
+  _ _
+  _ _ rum,
+  o -- ra, o -- %5
+  ra pro no -- bis,
+  no -- _ _ _
+  _ _ _ bis.
+
+  Re -- fu -- gi -- um %10
+  pec -- ca -- to -- rum,
+  o -- ra pro no -- bis,
+  o -- ra pro no -- bis,
+  o -- ra, o -- ra pro
+  no -- bis. %15
+  Con -- so --
+  la -- trix af -- fli --
+  cto -- rum,
+  o -- ra pro
+  no -- bis, pro %20
+  no -- bis.
+  Au --
+  xi -- li -- um Chri -- sti -- a --
+  no -- rum, Chri -- sti -- a --
+  no -- rum, %25
+  o -- ra pro
+  no -- bis, o -- ra, o --
+  ra pro no --
+  _ _ bis,
+  o -- ra pro no -- bis, o -- %30
+  ra pro no -- bis, o --
+  ra pro no --
+  bis.
+
+  O -- %39
+  ra pro %40
+  no -- bis, o --
+  ra pro no --
+  bis,
+
+  o -- %48
+  ra pro
+  no -- bis, o -- %50
+  ra pro no --
+  bis,
+
+  o -- %56
+  ra pro
+  no -- bis, o --
+  ra pro no --
+  bis, %60
+
+  o -- %74
+  ra pro %75
+  no -- bis, o --
+  ra pro no --
+  bis, pro no --
+  bis. %79 finis
+}

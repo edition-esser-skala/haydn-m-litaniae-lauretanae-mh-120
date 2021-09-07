@@ -57,3 +57,43 @@ SanctaClarinoII = {
     e4 r r\fermata \bar "|." %78 finis
   }
 }
+
+SpeculumClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoSpeculum
+    R1*28 %28
+    r2 r4 c'\fE
+    g d' c r %30
+    R1
+    g4 g d' c
+    g8 c d4 e r
+    R1
+    r4 d g,8 c g4 %35
+    c8 c g4 c e
+    d8 d c_\critnote d e4 r\fermata \bar "|." %37 finis
+  }
+}
+
+SalusClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoSalus
+    R1*35 \bar "||" %35
+    \twofourtime \key c \major \time 2/4 \tempoRegina
+      c'4\fE r
+    R2*5 %41
+    d8 c g g
+    e4 r
+    R2*7 %50
+    d'8_\critnote g, d' d
+    g,4 r
+    R2*6 %58
+    e8 e e4
+    e r %60
+    R2*16 %76
+    d'8 c c g
+    e c' g g
+    c4 r\fermata \bar "|." %79 finis
+  }
+}

@@ -57,3 +57,39 @@ SanctaTimpani = {
     c4 r r\fermata \bar "|." %78 finis
   }
 }
+
+SpeculumTimpani = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoSpeculum
+    R1*28 %28
+    r2 r4 c\fE
+    g g c r %30
+    R1
+    g4 g r c
+    g8 c g4 c r
+    R1
+    r2 r4 g %35
+    c8 c g4 c c
+    r g8 g c4 r\fermata \bar "|." %37 finis
+  }
+}
+
+SalusTimpani = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoSalus
+    R1*35 \bar "||" %35
+    \twofourtime \key c \major \time 2/4 \tempoRegina
+      c4\fE r
+    R2*5 %41
+    g8 c g g
+    c4 r
+    R2*8 %51
+    g4 r
+    R2*24 %76
+    g8 c g g
+    c c g g
+    c4 r\fermata \bar "|." %79 finis
+  }
+}

@@ -237,3 +237,217 @@ SanctaBassFigures = \figuremode {
   r <4> <3>
   r2. %78 finis
 }
+
+SpeculumOrgano = {
+  \relative c {
+    \clef bass
+    \key f \major \time 4/4 \tempoSpeculum
+    \mvTr f8\fE-\solo f, r f' c' c, r e
+    f f, r a b4 b8 h
+    c4 e8 c f a g f
+    c' c, e c f b c c,
+    f\pE f, r f' c' c, r e %5
+    f f, a' f b b, r b'
+    a g a f g f g c,
+    f4\fE r8 f c' c, r e
+    f\pE f, r f' e d e c
+    f d16 e f8 fis g4 h,8 a %10
+    g a h g c d e c
+    g a h g c d e c
+    f f, d' f g g, r h
+    c e f g c,\fE c, r c'
+    g' g, r h c c, r e' %15
+    f a f g c\pE b! a g
+    fis?4. fis8 g,\fE g' fis d
+    g\pE f e c f f16 g a8 b
+    c b a f^\critnote b, b' a h
+    c,\fE c' b a^\critnote b\pE a b g %20
+    c b a g16 a b8 a b g
+    c b a g16 f g8 f e c
+    f b a d c b c c,
+    f\fE f, r f' c' c, r e
+    f f, r a b4 b8 b' %25
+    b a16 b c8 c, f-\tutti f16 g a a g f
+    b8 b,16 c d d c b f'8 f16 g a a g f
+    g8 g16 f e e d c f8 f16 e f f e d
+    g8 g,16 a h h a g c8 c16 d e e d c
+    g'8 g16 a h h a g c8 c,16 d e e d c %30
+    f8 f16 e d d c h e8 e16 d c c h a
+    d8 d'16 c h h a g c8 c,16 d e e d c
+    g'8 e16 f g8 g, c c16 d e e d c
+    f8 f16 e f f e d g8 g16 f g g f e
+    a8 a16 g a a g f g8 c, g' g, %35
+    c c' g g, c c16 d e e d c
+    f f e d g8 g, c4 r\fermata \bar "|." %37 finis
+  }
+}
+
+SpeculumBassFigures = \figuremode {
+  r2.. <[7]>8
+  <9> <8>4 <[6]>8 <9> <8> \bo <[6]> \bc <[5]>
+  r4 \bo <[6]>4. <6>8 \bc <[6]>4
+  <6 4>8 <[5] 3> r2 \bo <[6 4]>8 \bc <[5 3]>
+  r2.. <[6]>8 %5
+  r1
+  \bo <[6]>8 <6> q q <4>4 <3>8 \bc <[7]>
+  r2.. <[6 5]>8
+  r2 \bo <[6]>8 <6!> \bc <[6]>4
+  <6>4. <5>8 <[_!]>2 %10
+  r2 r8 <6!> <[6]>4
+  <[_!]>2 r8 <6!> <[6]>4
+  \bo <[6 \l]>2 <_!>4. <6 5>8
+  r8 <6> <6 5> <_!> r2
+  <_!>4. <6 5>2 <6>8 %15
+  r4 <6 5>8 \bc <[_! \l]> r2
+  <7->2. <[6]>8 <8 _+>16 <7 \t>
+  r4 \bo <[6]>8 <7> r8. <6>16 \bc <[6]>4
+  <_->8 <\t> <6>4 r8 <4! 2> \bo <[6]> \bc <[\t]>
+  r4 \bo <[2]>8 <6>16 \bc <[5-]> r2 %20
+  <4>8 q <6>2.
+  <4>8 q <6>4 <3> \bo <[6]>8 \bc <[7]>
+  r8 \bo <[2]> <6> \bc <[6]> <6 4>4 <[5] 3>
+  r2.. <[7]>8
+  <9> <8>4 <[6]>8 <9> <8> \bo <[6]> \bc <[5]> %25
+  <2> <[6]> <4> <3> r2
+  <9>4 <6> <4>8 <3>4.
+  <9>4 <6 5> <[9]> <6>8 q
+  <[_!]>4 <6 5> <9 4>8 <8 3>4.
+  <[_!]>4 <6 5> <9 4>8 <8 3>4. %30
+  <9>8 <8>4. \bo <9 [5!]>8 \bc <8 [\t]>4.
+  <9>4 <3> <9> <6>
+  <_!>8 <6> <4> <_!> r4. \bo <[\tllur]>16 \bc <[7-]>
+  <9>8 <8> <6> \bo <[\tllur]>16 \bc <[7]> <9 _!>8 <8 \t> <6 _!> \bo <[\tllur \tllur]>16 \bc <[7 5!]>
+  <9!>8 <8> <6>4 <7 _!> <4>8 <_!> %35
+  r4 \bo <[4]>8 \bc <[_!]> r4 <6>
+  <6 5> \bo <[6 4]>8 \bc <[5 _!]> r2 %37 finis
+}
+
+SalusOrgano = {
+  \relative c {
+    \clef bass
+    \key g \minor \time 4/4 \tempoSalus
+    \mvTr g8\pE-\tutti-\senzaOrg b c d es b c d
+    g,4-! \clef treble << { b''8 a } \\ { \mvTr d,\fE-\colOrg c } >> \clef bass g f es d
+    c4 c'8 b a g fis d
+    es2 d8 \mvTr fis\pE-\senzaOrg g es
+    d e \mvTr fis\fE-\colOrg d g a b g %5
+    c, d es c f f g g
+    es es f f g g f es
+    f f f, f b \mvTr d-\pE-\senzaOrg es f
+    g d es e f g es f
+    b, b \mvTr b\fE-\colOrg b f' f f f %10
+    f f a a b b b, b
+    b b b b es es es es
+    as as as as b b b b
+    b b as as as as g c
+    b b b, b es \mvTr g\pE-\senzaOrg as as %15
+    as g as b \mvTr es,\fE-\colOrg es es es
+    es es es es e e e e
+    f f h, h c c c c
+    c c e e f f as, as
+    b b b b b b as b %20
+    c c c c f, \mvTr as\pE-\senzaOrg b b
+    b as b c f, f' \mvTr f\fE-\colOrg f
+    d! d es es c c d d
+    h h c c c' c b b
+    as as as as g g g g %25
+    g g, h g c c es c
+    as as' b b, es es g es
+    f f f f f f es d
+    es d c c g'4 g,
+    g'8 g g g g g g g %30
+    c, c c' c as as as as
+    as as as as g g g g
+    c, \mvTr es\pE-\senzaOrg f g as es f f^\critnote
+    f f f f f es f g \noBreak
+    as g f es f f g g, \bar "||" %35
+    \twofourtime \key c \major \time 2/4 \tempoRegina \newSpacingSection
+      c4 r \noBreak
+    R2*2
+    r4 r8 e\f
+    f d e c %40
+    d h c a'
+    g e16 f g8 g,
+    c4 r
+    R2*4 %47
+    r4 r8 e
+    f d e c
+    d h c a' %50
+    fis g d d,
+    g4 r
+    R2*3 %55
+    r4 r8 c
+    d h c a
+    h gis a f'
+    e a, e' e,
+    a4 r %60
+    R2*13 %73
+    r4 r8 e'
+    f d e c %75
+    d h c a'
+    g e16 f g8 g,
+    c c' g g,
+    c4 r\fermata \bar "|." %79 finis
+  }
+}
+
+SalusBassFigures = \figuremode {
+  r1
+  r
+  <5 3>8 <4 2> <3>4 <5 3>8 <3> <6> <[_+]>
+  <7>4 <6> <[_+]>2
+  r4 <6> <10 9> <[6]> %5
+  <10 9> <[6]> <7-> <5>
+  <6 5> <\t \t> <\t \t> <6 4>8 <8 5>
+  <6 4>4 \bo <[5 \t]>8 \bc <[\t 3]> r2
+  r1
+  r2 <6 4>4 <5 3> %10
+  <7> <6 5> <9 4> <8 3>
+  <7->2 <9 4->4 <8 3>
+  <7> \bo <[8] 6>8 \bc <[7] 5> <4>4 <3>
+  <4 2> <6> <4 2> <6>8 <6->
+  <6 4>4 <5 3> r2 %15
+  r1
+  <7->2 <\t>4 <6>8 <5>
+  <9 _-> <8 \t> <7- _!>4 <5 4>8 <\t _!>4.
+  <\t \t>4 <6>8 <5> <9 _->4 <6>8 <5->
+  <10- 9>8 <[\t 8]> \bo <[8] 6 _-> \bc <[7-] 5 \t> <4! 2>4 <6>8 <6 [_-]> %20
+  <6- 4>4 <5 _!> <[_-]>2
+  r2. <_->4
+  <6 5->2 <6- 5>4 <5->
+  <6 5>2 <5>8 <6-> <7-> <6>
+  <7>4 <6> <_!>2 %25
+  <\t> <9>4 <6>
+  <6 5> <8 6>8 <7-> <9>4 <6>
+  <9 _-> <8 \t> <4! _-> \bassFigureExtendersOn <4! 3>8 <4! 3\!> \bassFigureExtendersOff
+  <6> <6!>4. <6 4>4 <5 _!>
+  <7 [_!]>2. <6 4>8 <[5] _!> %30
+  r2 <5>
+  <6\\> <6 4>4 <5 _!>
+  r1
+  r
+  r %35
+  <[_!]>2
+  r2*2
+  r4. <6>8
+  <9> <6> <9> <6> %40
+  <9> <6> <9> <6>
+  <7> <[6]> <4> <3>
+  r2*5 %47
+  r4. <6>8
+  <9> <6> <9> <6>
+  <9> <6> <9> <[5]> %50
+  \bo <[6 5]>4 <5 4>8 \bc <[\t _+]>
+  r2*4 %55
+  r4. <6>8
+  <9> <6> <9> <6>
+  <9 [5+]> <6> <9> <6>
+  <[7] _+>4 <4>8 <_+>
+  r2*14 %73
+  r4. <6>8
+  <9> <6> <9> <6> %75
+  <9> <6> <9> <6>
+  <7> <[6]> <4> <3>
+  r4 <4>8 <3>
+  r2 %79 finis
+}

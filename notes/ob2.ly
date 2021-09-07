@@ -62,3 +62,72 @@ SanctaOboeII = {
     e2.\fermata \bar "|." %78 finis
   }
 }
+
+SpeculumOboeII = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \tempoSpeculum
+    a'8.\fE b16 c4 e8. f16 g4
+    a,8. b16 c4 r r8 d
+    c2 c4 e,8 f
+    f e c'4 c8 \tuplet 3/2 8 { b16 a g } f8 e
+    f4 r r2 %5
+    R1*2
+    a2\fE g
+    a4 r r2
+    R1*4 %13
+    r2 c2\fE
+    h4. d8 c2 %15
+    c4. h8 c4 r
+    R1*7 %23
+    a8.\fE b16 c4 e8. f16 g4
+    a,8. b16 c4 r r8 d %25
+    c2 a4 c~
+    c b~^\critnote b8 a a4~
+    a-\critnote g2 f4
+    g4. d'8 d c r c
+    h4. d8 d c r g %30
+    a2 g
+    f e
+    h'8 c4 h8 c4 r8 g
+    g f a4 a8 g h4
+    h8 a c4 h8 c4 h8 %35
+    c e d4 e e
+    f4^\critnote e8 d e4 r\fermata \bar "|." %37 finis
+  }
+}
+
+SalusOboeII = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 4/4 \tempoSalus
+    R1*35 \bar "||" %35
+    \twofourtime \key c \major \time 2/4 \tempoRegina
+      c'4\fE r
+    R2*2
+    r4 r8 g
+    a h g a %40
+    f g e f
+    f e d4
+    c r
+    R2*4 %47
+    r4 r8 g'
+    a h g a
+    f g e a %50
+    a g4 fis8
+    g4 r
+    R2*3 %55
+    r4 r8 e
+    f g e f
+    d e c d
+    e2
+    e4 r %60
+    R2*13 %73
+    r4 r8 g
+    a h g a %75
+    f g e f
+    f e d4
+    e8 e' d4
+    e r\fermata \bar "|." %79 finis
+  }
+}

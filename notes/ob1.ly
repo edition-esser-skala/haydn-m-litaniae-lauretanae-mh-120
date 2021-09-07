@@ -63,3 +63,72 @@ SanctaOboeI = {
     c2.\fermata \bar "|." %78 finis
   }
 }
+
+SpeculumOboeI = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \tempoSpeculum
+    f'8.\fE g16 a4 g8. a16 b4
+    f8. g16 a4 r r8 f
+    e4 g8. a32 b \tuplet 3/2 8 { a16[ g f] e d c } b8 a
+    a\trill g g'8. a32 b \tuplet 3/2 8 { a16[ e f] d c b } a8 g\trill
+    f4 r r2 %5
+    R1*2
+    f'2\fE e
+    f4 r r2
+    R1*4 %13
+    r2 e\fE
+    d4. f8 e2 %15
+    f8 e d4\trill c r
+    R1*7 %23
+    f8.\fE g16 a4 g8. a16 b4
+    f8. g16 a4 r r8 f %25
+    e f4 e8\trill f2
+    d c
+    b a4 d8 c
+    h4. f'8 f e r e
+    d4. f8 f e r g %30
+    g4 f2 e4~
+    e d2 c4
+    d8 e d4\trill c r8 c
+    c4 d2 e4~
+    e f f8 e e d %35
+    e c'4 h8 c4 c
+    d4^\critnote c8 h c4 r\fermata \bar "|." %37 finis
+  }
+}
+
+SalusOboeI = {
+  \relative c' {
+    \clef treble
+    \key g \minor \time 4/4 \tempoSalus
+    R1*35 \bar "||" %35
+    \twofourtime \key c \major \time 2/4 \tempoRegina
+      e'4\fE r
+    R2*2
+    r4 r8 \once \tieDashed g~
+    g f4 e8~ %40
+    e d4 c8
+    h c4 h8
+    c4 r
+    R2*4 %47
+    r4 r8 \once \tieDashed g'~
+    g f4 e8~
+    e d4 c8 %50
+    c h a4\trill
+    g r
+    R2*3 %55
+    r4 r8 e'~
+    e d4 \once \tieDashed c8~
+    c h4 a8
+    gis a4 gis8
+    a4^\critnote r %60
+    R2*13 %73
+    r4 r8 g'~
+    g f4 e8~ %75
+    e d4 c8
+    h c4 h8
+    c c'4 h8
+    c4 r\fermata \bar "|." %79 finis
+  }
+}

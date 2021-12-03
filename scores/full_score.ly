@@ -1,21 +1,14 @@
 \version "2.22.0"
 
 \include "../definitions.ly"
+\include "score_settings/full-score.ly"
 
-\paper {
-  #(define (page-post-process layout pages) (ly:create-toc-file layout pages))
-}
-
-#(set-global-staff-size 15.87)
 
 \book {
   \bookpart {
-    \header {
-      number = "1"
-      title = "K Y R I E"
-    }
+    \section "1" "Kyrie"
+    \addTocEntry
     \paper { indent = 3\cm }
-    \tocSection "1" "Kyrie"
     \score {
       <<
         \new StaffGroup <<
@@ -33,12 +26,12 @@
         >>
         \new StaffGroup <<
           \new Staff <<
-            \set Staff.instrumentName = \markup \center-column { "Clarino I, II" "in C" }
+            \set Staff.instrumentName = \transposedName "Clarino I, II" "C" ""
             \partCombine \KyrieClarinoI \KyrieClarinoII
           >>
         >>
         \new Staff {
-          \set Staff.instrumentName = \markup \center-column { "Timpani" "in C–G" }
+          \set Staff.instrumentName = \transposedTimp "C" "" "G" ""
           \KyrieTimpani
         }
         \new StaffGroup <<
@@ -56,25 +49,19 @@
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = \SopranoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitSoprano
             \new Voice = "Soprano" { \dynamicUp \KyrieSoprano }
           }
           \new Lyrics \lyricsto Soprano \KyrieSopranoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \AltoIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitAlto
             \new Voice = "Alto" { \dynamicUp \KyrieAlto }
           }
           \new Lyrics \lyricsto Alto \KyrieAltoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \TenoreIncipit
-            \override Staff.InstrumentName.self-alignment-Y = ##f
-            \override Staff.InstrumentName.self-alignment-X = #RIGHT
+            \incipitTenore
             \new Voice = "Tenore" { \dynamicUp \KyrieTenore }
           }
           \new Lyrics \lyricsto Tenore \KyrieTenoreLyrics
@@ -99,11 +86,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "2"
-      title = "S A N C T A   M A R I A"
-    }
-    \tocSection "2" "Sancta Maria"
+    \section "2" "Sancta Maria"
+    \addTocEntry
     \score {
       <<
         \new StaffGroup <<
@@ -181,11 +165,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "3"
-      title = "S P E C U L U M   I U S T I T I Æ"
-    }
-    \tocSection "3" "Speculum iustitiae"
+    \section "3" "Speculum iustitiæ"
+    \addTocEntry
     \score {
       <<
         \new StaffGroup <<
@@ -263,11 +244,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "4"
-      title = "S A L U S   I N F I R M O R U M  –  R E G I N A   A N G E L O R U M"
-    }
-    \tocSection "4" "Salus infirmorum – Regina Angelorum"
+    \section "4" "Salus infirmorum"
+    \addTocEntry
     \score {
       <<
         \new StaffGroup <<
@@ -345,11 +323,8 @@
     }
   }
   \bookpart {
-    \header {
-      number = "5"
-      title = "A G N U S   D E I"
-    }
-    \tocSection "5" "Agnus Dei"
+    \section "5" "Agnus Dei"
+    \addTocEntry
     \score {
       <<
         \new StaffGroup <<

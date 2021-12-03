@@ -1,16 +1,21 @@
-composer: Haydn, Johann Michael
-title: Litaniae lauretanae
+composer:
+  last: Haydn
+  first: Johann Michael
+title: Litaniæ lauretanæ
 id: MH 120
 genre: litany
 scoring: S, A, T, B (solo), S, A, T, B (coro), 2 ob, 2 clno (C), timp (C–G), 2 vl, b, org
+license: cc-by-sa-4.0
 sources:
-  1:
+  B1:
     siglum: D-NATk
     shelfmark: NA/SP (H-53)
-    type: manuscript copy
     date: 1810–1839
     rism: 455039974
     url: https://mirador.acdh.oeaw.ac.at/musikarchivspitz/D-NATk_H53/
-github: haydn-m-litaniae-lauretanae-MH-120
+    license: public domain
+    principal: true
 imslp: Litaniae_Lauretanae,_MH_120_(Haydn,_Michael)
-notes:
+notes: doubtful attribution
+parts:
+  ottoni: Clarino I, II in C\\Timpani in C–G
